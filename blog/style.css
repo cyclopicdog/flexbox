@@ -5,12 +5,67 @@
 
 html {
   font-size: 18px;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
+}
+
+.section__post-right {
+  width: 95%;
+  height: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.section__post-left {
+  width: 95%;
+  height: 30%;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.img {
+  height: 95%;
+  width: 49%;
+  border: 1px solid black;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.post {
+  height: 95%;
+  width: 49%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.post .post__content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-content: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.date {
+  height: 15%;
+  width: auto;
 }
