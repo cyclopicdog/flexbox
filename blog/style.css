@@ -19,7 +19,7 @@ body {
   align-content: center;
 }
 
-.section__post-right {
+.section {
   width: 95%;
   height: 30%;
   display: flex;
@@ -29,14 +29,8 @@ body {
   align-content: center;
 }
 
-.section__post-left {
-  width: 95%;
-  height: 30%;
-  display: flex;
+.section:nth-child(odd) {
   flex-flow: row-reverse wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
 }
 
 .img {
